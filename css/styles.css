@@ -732,16 +732,33 @@ height: 24px;
 
 /* Checkboxe`s */
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .checkbox-container {
     margin-bottom: 24px;
     display: flex;
 }
 
 .input-checkbox {
-
+background: #fcfcfc;
+margin-bottom: 24px;
+align-items: center;
+justify-content: center;
 }
 
 .modal-form-label-checkbox {
+    display: block;
     font-size: 12px;
     font-weight: 400;
     line-height: 1.17;
@@ -755,12 +772,13 @@ height: 24px;
     justify-content: center;
     fill: transparent;
     margin-right: 8px;
-    flex-shrink: 0;
     width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-checkbox:checked + .modal-form-label-checkbox > .modal-form-checkbox-span {
