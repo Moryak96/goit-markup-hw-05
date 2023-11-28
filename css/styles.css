@@ -539,7 +539,7 @@ background-color: #31d0aa;
    display: flex;
    gap: 24px;
    width: 36px;
-height: 24px;
+   height: 24px;
 }
 
 .footer-label {
@@ -751,10 +751,10 @@ height: 24px;
 }
 
 .input-checkbox {
-background: #fcfcfc;
-margin-bottom: 24px;
-align-items: center;
-justify-content: center;
+    background: #fcfcfc;
+    margin-bottom: 24px;
+    align-items: center;
+    justify-content: center;
 }
 
 .form-label-checkbox {
